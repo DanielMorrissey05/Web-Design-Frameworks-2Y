@@ -10,6 +10,8 @@
   --color-paper: #f0eee3;
   --color-ink: #16220e;
   --color-link: #0b5c2a;
+  --color-ink-deep: #0b5c2a;
+  --color-on-dark: #fbeefb;
 
   --text-display: clamp(2.5rem, 1.6rem + 4vw, 5rem);
 }
