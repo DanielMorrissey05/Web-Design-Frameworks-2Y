@@ -22,20 +22,26 @@
          all still in normal document flow, everything just stacking block
          by block. That's what Flexbox is for. -->
 
-    <header>
+    <header  class=" mx-auto flex items-center font-display text-xl font-black tracking-tight text-ink no-underline">
       <div>
         <a href="index.html">
           <span aria-hidden="true"></span>
+          <a
+              href="index.html"
+          >
           Compass
         </a>
-        <nav aria-label="Primary">
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="find-support-services.html">Find support services</a>
-          <a href="student-stories.html">Student stories</a>
-          <a href="accommodations-faq.html">Accommodations FAQ</a>
-          <a href="events.html">Events &amp; drop-ins</a>
-          <a href="request-support.html">Request support</a>
+        <div class = "mx-auto flex max-w-5xl flex-wrap items-center gap-4 px-5 py-4"></div>
+
+        <nav aria-label="Primary" class="contents">
+          <a href="index.html" aria-current="page" class="py-1 text-base font-bold text-ink underline">Home</a>
+          <a href="find-support-services.html" class="py-1 text-base font-bold text-ink no-underline">Find support services</a>
+          <a href="student-stories.html" class="py-1 text-base font-bold text-ink no-underline">Student stories</a>
+          <a href="accommodations-faq.html" class="py-1 text-base font-bold text-ink no-underline">Accommodations FAQ</a>
+          <a href="events.html" class="py-1 text-base font-bold text-ink no-underline">Events &amp; drop-ins</a>
+          <a href="request-support.html" class="ml-auto py-1 font-display text-base font-extrabold text-link no-underline">Request support</a>
         </nav>
+        <span aria-hidden="true" class="mr-2 size-3 rounded-full bg-green"></span>
       </div>
     </header>
 
@@ -47,7 +53,7 @@
            flex yet. -->
       <ul class="list-none border-t-(length:--rule) border-ink pl-0">
         <li
-          class="border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
+          class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-lime p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -69,7 +75,7 @@
           <span class="font-display text-lg font-bold">Study skills</span>
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
+          class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-ink-deep p-8 text-center text-on-dark"
         >
           <svg
             class="h-14 w-14"
@@ -90,7 +96,7 @@
           >
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
+          class="flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-green p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -109,7 +115,7 @@
           <span class="font-display text-lg font-bold">Wellbeing</span>
         </li>
         <li
-          class="border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
+          class=" flex flex-col items-center gap-4 border-b-(length:--rule) border-ink bg-pink p-8 text-center text-on-light"
         >
           <svg
             class="h-14 w-14"
@@ -133,7 +139,7 @@
       <form aria-labelledby="filter-heading" method="get" action="#">
         <h2 id="filter-heading">Filter services</h2>
 
-        <div>
+        <div class="flex flex-wrap gap-4">
           <fieldset>
             <legend>Category</legend>
             <label
@@ -205,6 +211,70 @@
           <li><a href="request-support.html">Request support</a></li>
         </ul>
       </nav>
+
+      <nav class="flex items-center justify-between bg-ink-deep p-4 text-on-dark">
+            <span class="font-display font-bold">Brand</span>
+            <div class="flex gap-4">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            </div>
+      </nav>
+
+      <div class="flex h-40 items-center justify-center bg-paper">
+            <div class="bg-green p-4 text-on-light">Centred, both directions</div>
+          </div>
+
+          <div class="flex gap-4">
+              <div class="flex-1 bg-lime p-4">A</div>
+              <div class="flex-1 bg-green p-4">B</div>
+              <div class="flex-1 bg-pink p-4">C</div>
+          </div>
+
+          <div class="flex gap-6">
+              <aside class="w-56 shrink-0 bg-ink-deep p-4 text-on-dark">Sidebar</aside>
+              <div class="min-w-0 flex-1 bg-paper p-4">Fluid content</div>
+          </div>
+
+          <div class="flex items-start gap-4">
+              <img
+                src="https://placehold.co/64"
+                alt=""
+                class="h-16 w-16 shrink-0 rounded-full"
+              />
+              <div>
+                <p class="font-bold">Someone's name</p>
+                <p>
+                  A longer block of text that can wrap onto several lines without
+                  pushing the image out of alignment.
+                </p>
+              </div>
+          </div>
+
+          <div class="flex min-h-screen flex-col">
+              <header class="bg-ink-deep p-4 text-on-dark">Header</header>
+              <main class="flex-1 p-4">Main content, however tall it needs to be</main>
+              <footer class="mt-auto bg-paper p-4">Footer, always at the bottom</footer>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Wellbeing</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Online</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">City campus</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Drop-in</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Book a place</span
+              >
+          </div>
+
+          <div class="flex h-64 flex-col gap-2 border-(length:--rule) border-ink p-5">
+              <h3 class="font-bold">Card title</h3>
+              <p>Some body copy, short or long, it doesn't matter.</p>
+              <button
+                class="mt-auto inline-block border-(length:--rule) border-ink bg-transparent px-4 py-2 font-bold text-ink"
+              >
+                Action
+              </button>
+          </div>
     </footer>
   </body>
 </html>
