@@ -140,7 +140,7 @@
         <h2 id="filter-heading">Filter services</h2>
 
         <div class="flex flex-wrap gap-4">
-          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-green bg-paper px-4 pt-3 pb-4">
+          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-green bg-paper px-4 pt-5 pb-8">
             <legend class="rounded-full bg-green px-3 py-1 font-display text-base font-bold text-on-light">Category</legend>
             <label class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
               ><input type="checkbox" name="category" value="study-skills" />
@@ -164,7 +164,7 @@
             >
           </fieldset>
 
-          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-lime bg-paper px-4 pt-3 pb-4">
+          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-lime bg-paper px-4 pt-5 pb-8">
             <legend class="rounded-full bg-lime px-3 py-1 font-display text-base font-bold text-on-light">Format</legend>
             <label class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
               ><input type="checkbox" name="format" value="in-person" /> In
@@ -180,7 +180,7 @@
             >
           </fieldset>
 
-          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-pink bg-paper px-4 pt-3 pb-4">
+          <fieldset class="border-(length:--rule) border-t-4 border-ink border-t-pink bg-paper px-4 pt-5 pb-8">
             <legend class="rounded-full bg-pink px-3 py-1 font-display text-base font-bold text-on-light">Campus</legend>
             <label class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
               ><input type="checkbox" name="campus" value="city" /> City</label
@@ -190,28 +190,13 @@
               Riverside</label
             >
             <label class="flex items-center gap-2 rounded-full border-(length:--rule) border-ink bg-paper px-3 py-1.5 font-normal"
-              ><input type="checkbox" name="campus" value="online-only" />
-              Online only</label
-            >
+              ><input type="checkbox" name="campus" value="online-only" />Online only</label>
           </fieldset>
         </div>
       </form>
     </main>
 
-    <!-- Homework target: build this into a real footer link list using
-         gap-x-*/gap-y-*. Nothing here has a class yet either. -->
     <footer>
-      <!-- <nav aria-label="Footer">
-        <ul>
-          <li>
-            <a href="find-support-services.html">Find support services</a>
-          </li>
-          <li><a href="accommodations-faq.html">Accommodations FAQ</a></li>
-          <li><a href="events.html">Events &amp; drop-ins</a></li>
-          <li><a href="request-support.html">Request support</a></li>
-        </ul>
-       </nav> -->
-
       <nav class="flex items-center justify-between bg-ink-deep p-4 text-on-dark">
             <span class="font-display font-bold">Brand</span>
             <div class="flex gap-4">
@@ -220,6 +205,51 @@
             <a href="#">Contact</a>
             </div>
       </nav>
+
+      <!-- Homework target: build this into a real footer link list using
+        gap-x-*/gap-y-*. Nothing here has a class yet either. -->
+      <nav aria-label="Footer">
+        <ul class="flex flex-wrap gap-x-6 gap-y-3">
+          <li>
+            <a href="find-support-services.html">Find support services</a>
+          </li>
+          <li>
+            <a href="accommodations-faq.html">Accommodations FAQ</a>
+          </li>
+          <li>
+            <a href="events.html">Events &amp; drop-ins</a>
+          </li>
+          <li>
+            <a href="request-support.html">Request support</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Drop-In Hosts Strip goes here -->
+          <div class="p-8">
+            <h2 class="font-display text-2xl font-bold">Drop-in hosts</h2>
+
+            <div class="flex flex-wrap gap-6">
+
+              <article class="bg-lime p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Maya Byrne</h3> 
+                <p class="font-bold">Wellbeing Host</p> 
+                <p>Helps students find wellbeing drop-ins.</p>
+              </article>
+              
+              <article class="bg-green p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Alex Murphy</h3> 
+                <p class="font-bold">Study Skills Advisor</p> 
+                <p>Runs friendly study skills sessions.</p>
+              </article>
+
+              <article class="bg-pink p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Sam O'Brien</h3> 
+                <p class="font-bold">Peer Support</p> 
+                <p>Helps students connect with other students.</p>
+              </article>
+            </div>
+          </div>
 
       <div class="flex h-40 items-center justify-center bg-paper">
             <div class="bg-green p-4 text-on-light">Centred, both directions</div>
@@ -257,15 +287,6 @@
               <footer class="mt-auto bg-paper p-4">Footer, always at the bottom</footer>
           </div>
 
-          <div class="flex flex-wrap gap-2">
-              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Wellbeing</span>
-              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Online</span>
-              <span class="rounded-full bg-lime px-3 py-1 text-on-light">City campus</span>
-              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Drop-in</span>
-              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Book a place</span
-              >
-          </div>
-
           <div class="flex h-64 flex-col gap-2 border-(length:--rule) border-ink p-5">
               <h3 class="font-bold">Card title</h3>
               <p>Some body copy, short or long, it doesn't matter.</p>
@@ -274,6 +295,15 @@
               >
                 Action
               </button>
+          </div>
+
+          <div class="flex flex-wrap gap-y-2">
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Wellbeing</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Online</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">City campus</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Drop-in</span>
+              <span class="rounded-full bg-lime px-3 py-1 text-on-light">Book a place</span
+              >
           </div>
     </footer>
   </body>
