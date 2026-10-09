@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Week 04 practice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans leading-relaxed text-ink">
+    <!-- A blank page wired to the same stylesheet as index.html, and to the
+         same watcher: any class you type here is built automatically.
+         Use it for this week's pattern gallery, challenges and anything you
+         want to break on purpose, so index.html keeps matching the guided
+         build. -->
+
+<div class="grid h-80 grid-cols-[10rem_1fr_10rem] grid-rows-[auto_1fr_auto] gap-2 mx-150 mb-16"
+    >
+      <header class="col-span-3 bg-ink-deep p-3 text-on-dark">Header</header>
+      <nav class="bg-lime p-3 text-on-light">Nav</nav>
+      <main class="bg-green p-3 text-on-light">Main</main>
+      <aside class="bg-pink p-3 text-on-light">Aside</aside>
+  <footer class="col-span-3 bg-ink-deep p-3 text-on-dark">Footer</footer>
+</div>
+    <main>
+    <div class="grid grid-flow-dense auto-rows-[5rem] grid-cols-4 gap-2 mx-150">
+      <div class="col-span-2 row-span-2 bg-green p-2 text-on-light">1</div>
+      <div class="bg-lime p-2 text-on-light">2</div>
+      <div class="bg-pink p-2 text-on-light">3</div>
+      <div class="row-span-2 bg-lime p-2 text-on-light">4</div>
+      <div class="col-span-2 bg-pink p-2 text-on-light">5</div>
+      <div class="bg-green p-2 text-on-light">6</div>
+      <div class="col-span-2 bg-green p-2 text-on-light">7</div>
+      <div class="bg-pink p-2 text-on-light">8</div>
+      <div class="col-span-2 bg-lime p-2 text-on-light">9</div>
+    </div>
+
+    <div class="grid grid-cols-3 items-center gap-4 mx-150 mt-16">
+      <div class="border-(length:--rule) border-ink bg-paper p-6">
+        <h3 class="font-bold">Drop-in</h3>
+        <p>Free</p>
+      </div>
+      <div class="bg-ink-deep p-10 text-on-dark">
+        <h3 class="font-bold">Plan</h3>
+        <p>Free, with an adviser</p>
+      </div>
+      <div class="border-(length:--rule) border-ink bg-paper p-6">
+        <h3 class="font-bold">Group</h3>
+        <p>Free</p>
+  </div>
+</div>
+
+  <form class="grid grid-cols-2 gap-4 mx-150 mt-16">
+  <label class="flex flex-col gap-1"
+    >First name
+    <input class="border-(length:--rule) border-ink bg-paper p-2" />
+  </label>
+  <label class="flex flex-col gap-1"
+    >Last name
+    <input class="border-(length:--rule) border-ink bg-paper p-2" />
+  </label>
+  <label class="col-span-2 flex flex-col gap-1"
+    >Email
+    <input class="border-(length:--rule) border-ink bg-paper p-2" />
+  </label>
+  <button class="col-span-2 bg-green p-3 font-bold text-on-light">Send</button>
+</form>
+    </main>
+  </body>
+</html>
