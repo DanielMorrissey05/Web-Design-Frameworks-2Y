@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en-IE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Week 03 starter — Compass header/nav, support cells &amp; filter row
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Hanken+Grotesk:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/app.css" />
+  </head>
+  <body class="bg-paper font-sans text-ink">
+    <!-- Base colour and type (bg-paper, font-sans, text-ink) are already
+         here, same three classes as weeks 1 and 2 — nothing new to add.
+         Nothing below has a layout class yet, though: the header row, the
+         nav links, the support cells, and the filter row's fieldsets are
+         all still in normal document flow, everything just stacking block
+         by block. That's what Flexbox is for. -->
+
+  <header>
+  </header>
+
+    <main>
+      <!-- Colour, border, padding, and type here are exactly what you built
+           in week 2 — carried over as given, so this week is only about
+           the one thing that's new: the icon still sits inline next to its
+           label instead of stacked above it, because nothing here is
+           flex yet. -->
+
+           <!-- Drop-In Hosts Strip goes here -->
+          <div class="p-8">
+            <h2 class="font-display text-2xl font-bold">Drop-in hosts</h2>
+
+            <div class="flex flex-wrap gap-6">
+
+              <article class="bg-lime p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Maya Byrne</h3> 
+                <p class="font-bold">Wellbeing Host</p> 
+                <p>Helps students find wellbeing drop-ins.</p>
+              </article>
+              
+              <article class="bg-green p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Alex Murphy</h3> 
+                <p class="font-bold">Study Skills Advisor</p> 
+                <p>Runs friendly study skills sessions.</p>
+              </article>
+
+              <article class="bg-pink p-8 text-on-light">
+                <h3 class="font-display text-xl font-bold">Sam O'Brien</h3> 
+                <p class="font-bold">Peer Support</p> 
+                <p>Helps students connect with other students.</p>
+              </article>
+            </div>
+          </div>
+    </main>
+
+    <footer>
+
+      <!-- Homework target: build this into a real footer link list using
+        gap-x-*/gap-y-*. Nothing here has a class yet either. -->
+      <nav aria-label="Footer">
+        <ul class="flex flex-wrap gap-x-16 gap-y-12 ml-8">
+          <li>
+            <a href="find-support-services.html">Find support services</a>
+          </li>
+          <li>
+            <a href="accommodations-faq.html">Accommodations FAQ</a>
+          </li>
+          <li>
+            <a href="events.html">Events &amp; drop-ins</a>
+          </li>
+          <li>
+            <a href="request-support.html">Request support</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
