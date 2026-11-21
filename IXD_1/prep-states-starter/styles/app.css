@@ -16,6 +16,7 @@
   --color-link: #0b5c2a;
   --color-on-light: #16220e;
   --color-on-dark: #f0eee3;
+  --disabled-button: 
 
   /* Same mechanism as --text-display from week 1: a clamp()ed size,
      available as the text-h2 utility. Week 7 covers writing your own. */
