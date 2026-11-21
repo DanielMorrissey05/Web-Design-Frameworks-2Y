@@ -14,6 +14,30 @@
   </head>
   <body class="bg-paper font-sans leading-relaxed text-ink">
     <!-- A blank page wired to the same stylesheet as index.html, and to the same watcher: any class you type here is built automatically. Use it for the docs challenge and anything you want to break on purpose, so index.html keeps matching the guided build. -->
-    <main></main>
+    <main>
+      <section class="m-6 space-y-6">
+        <h2 class="text-2xl font-bold">Custom border utility test</h2>
+
+        <div class="border-rule p-4">
+          Normal border: 1.5px
+        </div>
+
+        <div class="border-rule-2 p-4">
+          Double border: 3px
+        </div>
+
+        <div class="border-rule-3 p-4">
+          Triple border: 4.5px
+        </div>
+
+        <div class="border-rule p-4 hover:border-rule-3">
+          Hover: border changes from 1.5px to 4.5px
+        </div>
+
+        <div class="border-rule md:border-rule-2 p-4">
+          Resize: border becomes 3px at 768px and above
+        </div>
+      </section>
+    </main>
   </body>
 </html>
