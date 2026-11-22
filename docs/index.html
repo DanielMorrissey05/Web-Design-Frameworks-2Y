@@ -78,37 +78,150 @@
 
         <section
         aria-label="Search for flights"
-            class="relative z-10 mx-auto -mt-12 max-w-7xl px-5 pb-8 md:-mt-20"
+        class="relative z-10 mx-auto -mt-12 max-w-7xl px-5 pb-8 md:-mt-20"
         >
 
-        <div class="flex w-fit max-w-full overflow-hidden rounded-t-xl border border-button-border bg-page-2"></div>
+            <div class="flex w-fit max-w-full mt-80 overflow-hidden rounded-t-xl border border-button-border bg-page-2">
 
-        <button
-            type="button"
-            class="border-r border-button-border bg-page-2 px-5 py-3 font-bold text-ink-deep"
-        >
-            Flight ✈
-        </button>
+                <button
+                    type="button"
+                    class="border-r border-button-border bg-page-2 px-5 py-3 font-bold text-ink-deep"
+                >
+                    Flight ✈
+                </button>
 
-        <button 
-            type="button"
-            class="border-r border-button-border px-5 py-3 text-ink-deep"
-        >
-        Hotel
-        </button>
+                <button 
+                    type="button"
+                    class="border-r border-button-border bg-page-2 px-7 py-3 text-ink-deep"
+                >
+                Hotel
+                </button>
 
-        <button
-            type="button"
-            class="px-5 py-3 text-ink-deep"
-        >
-        Car
-        </button>
-    </div>
+                <button
+                    type="button"
+                    class="border-r border-button-border bg-page-2 px-9 py-3 text-ink-deep"
+                >
+                Car
+                </button>
+            </div>
+
+            <form 
+                action="#"
+                method="get"
+                class="border border-button-border bg-page-2 p-4 shadow-sm md:p-6"
+                >
+            
+                <fieldset class="mb-5">
+                    <div class="flex flex-wrap gap-0.5 text-sm text-ink-deep">
+                        <label class="flex items-center gap-2 rounded-full bg-button-nav px-3 py-2">
+                            One Way?
+                        </label>
+
+                        <label class="flex items-center gap-2 rounded-full bg-button-nav px-3 py-2">
+                            Round-Trip?
+                        </label>
+
+                        <label class="flex items-center gap-2 rounded-full bg-button-nav px-3 py-2">
+                            Multi City?
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                    <label class="flex min-w-0 flex-col gap-1 border border-border p-3">
+                        <span class="text-sm text-on-light">Fly from</span>
+                        <input
+                            type="text"
+                            name="from"
+                            placeholder="Find your airport here"
+                            class="w-full min-w-0 text-sm font-bold text-ink-deep focus-visible:outline-2 focus-visible:outline-ink"
+                            />
+                    </label>
+
+                    <label class="flex min-w-0 flex-col gap-1 border border-border p-3">
+                        <span class="text-sm text-on-light">Fly to</span>
+                        <input
+                            type="text"
+                            name="to"
+                            placeholder="Find your airport here"
+                            class="w-full min-w-0 text-sm font-bold text-ink-deep focus-visible:outline-2 focus-visible:outline-ink"
+                            />
+                    </label>
+
+                    <label class="flex min-w-0 flex-col gap-1 border border-border p-3">
+                        <span class="text-sm text-on-light">Departure date</span>
+                        <input
+                            type="date"
+                            name="departure"
+                            class="w-full min-w-0 text-sm font-bold text-ink-deep focus-visible:outline-2 focus-visible:outline-ink"
+                            />
+                    </label>
+
+                    <label class="flex min-w-0 flex-col gap-1 border border-border p-3">
+                        <span class="text-sm text-on-light">Return date</span>
+                        <input
+                            type="date"
+                            name="return"
+                            class="w-full min-w-0 text-sm font-bold text-ink-deep focus-visible:outline-2 focus-visible:outline-ink"
+                            />
+                    </label>
+                </div>
+
+                <div class="mt-3 flex flex-col gap-3 sm:flex-row">
+                    <label class="flex flex-col min-w-0 gap-1 border border-border p-3 ">
+                        <span class="text-sm text-on-light">How many passengers?</span>
+                        <select 
+                            name="passengers"
+                            class="bg-page-2 text-sm font-bold text-ink-deep"
+                            >
+                            <option value="1">1 Adult</option>
+                            <option value="2">2 Adults</option>
+                            <option value="3">3 Adults</option>
+                            <option value="4">4 Adult</option>
+                        </select>
+                    </label>
+
+                    <button
+                        type="submit"
+                        class="min-h-12 bg-blue px-6 py-3 font-bold text-on-dark hover:bg-button-hover-2 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink"
+                        >
+                        Search Available Flights
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <section class="mx-auto max-w-7xl px-5 pb-12">
+
+            <p class="mb-5 max-w-2xl text-body font-semibold text-ink-deep">
+                If at any point you're confused with the booking process
+                or come across a problem you can't solve, contact one
+                of our three support lines below.
+            </p>
+
+            <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
+
+                <div class="border border-button-border bg-page-2 p-4">
+                    <h2 class="font-bold text-ink-deep">Our help is available</h2>
+                    <p class="text-sm text-ink">Call +353 89 221 7732</p>
+                </div>
+
+                <div class="border border-button-border bg-page-2 p-4">
+                    <h2 class="font-bold text-ink-deep">International flight info</h2>
+                    <p class="text-sm text-ink">Call +353 83 811 5602</p>
+                </div>
+
+                <div class="border border-button-border bg-page-2 p-4">
+                    <h2 class="font-bold text-ink-deep">Request for a refund</h2>
+                    <p class="text-sm text-ink">Call +353 64 835 9917</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="p-4">
         <div class="mx-auto max-w-5xl">
-            <p>My App</p>
+
         </div>
     </footer>
 
